@@ -15,7 +15,7 @@ for (let i = 0; i < chart.song.notes.length; i++) {
 	const notes = chart.song.notes[i];
 	if (!notes?.sectionNotes) continue;
 	for (let i = 0; i < notes.sectionNotes.length; i++) {
-		if (notes.sectionNotes[i].length > 3/* && !ignoreNotes.includes(notes.sectionNotes[i][3])*/) {
+		if (notes.sectionNotes[i].length > 3 && !ignoreNotes.includes(notes.sectionNotes[i][3])) {
 			notes.sectionNotes.splice(i, 1);
 			i--;
 			amount++;
